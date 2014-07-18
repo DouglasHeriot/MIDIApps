@@ -35,9 +35,9 @@
     // Returns YES if the request was cancelled before it was finished sending; NO if it was already finished.
     // In either case, SMSysExSendRequestFinishedNotification will be posted.
 
-- (unsigned int)bytesRemaining;
-- (unsigned int)totalBytes;
-- (unsigned int)bytesSent;
+- (NSUInteger)bytesRemaining;
+- (NSUInteger)totalBytes;
+- (NSUInteger)bytesSent;
 - (BOOL)wereAllBytesSent;
 
 @end
