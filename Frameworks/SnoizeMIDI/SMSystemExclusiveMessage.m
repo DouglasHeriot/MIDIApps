@@ -655,7 +655,7 @@ void writeVariableLengthFieldIntoSMF(Byte **pPtr, const UInt32 value)
     // Messages must start with 0xF0.  Messages may end in any byte > 0x7F.
 
     NSMutableArray *messages;
-    unsigned int byteIndex;
+    NSUInteger byteIndex;
     const Byte *p;
     NSRange range = { 0, 0 };
     BOOL inMessage;
